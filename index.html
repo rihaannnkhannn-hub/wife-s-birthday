@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Sanaaaa😚</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<audio id="bgMusic" loop>
+    <source src="assets/music.mp3" type="audio/mpeg">
+</audio>
+
+<!-- PAGE 1 -->
+
+<section id="page1" class="page active">
+
+<div class="heart-box">
+
+❤️
+
+</div>
+
+<h1>Happy Birthday Sanaaaa😚</h1>
+
+<p class="subtitle">
+Tap below to open your surprise
+</p>
+
+<button onclick="nextPage(2)">
+Open Surprise
+</button>
+
+</section>
+
+<!-- PAGE 2 -->
+
+<section id="page2" class="page">
+
+<h1>Are You Excited? 🥹</h1>
+
+<p>
+I prepared something special for you...
+</p>
+
+<div class="btn-group">
+
+<button onclick="nextPage(3)">
+YES ❤️
+</button>
+
+<button id="noBtn">
+NO 😒
+</button>
+
+</div>
+
+</section>
+
+<!-- PAGE 3 -->
+
+<section id="page3" class="page">
+
+<h1>Pop All Balloons 🎈</h1>
+
+<p id="balloonCounter">
+0 / 4 Popped
+</p>
+
+<div class="balloon-area">
+
+<div class="balloon" onclick="popBalloon(this)"></div>
+<div class="balloon" onclick="popBalloon(this)"></div>
+<div class="balloon" onclick="popBalloon(this)"></div>
+<div class="balloon" onclick="popBalloon(this)"></div>
+
+</div>
+
+</section>
+
+<!-- PAGE 4 -->
+
+<section id="page4" class="page">
+
+<h1>Make A Wish 🕯️</h1>
+
+<p>
+Tap the candle to blow it
+</p>
+
+<div id="candle" onclick="blowCandle()">
+🕯️
+</div>
+
+</section>
+
+<!-- PAGE 5 -->
+
+<section id="page5" class="page">
+
+<h1>For You 🌹</h1>
+
+<div class="rose">
+🌹
+</div>
+
+<p>
+You are the most beautiful gift Allah gave me ❤️
+</p>
+
+<button onclick="nextPage(6)">
+Continue
+</button>
+
+</section>
+
+<!-- PAGE 6 -->
+
+<section id="page6" class="page">
+
+<div class="letter">
+
+<h2>
+A Message From My Heart ❤️
+</h2>
+
+<p>
+
+Dear Begum😘,
+
+Happiest 19th birthday to my dear love.
+
+I love you so much my chand,
+my gulkand,
+my jigar ka tukda.
+
+You're the best thing that ever happened to me.
+
+Tum Allah ki sabse pyari naimat ho.
+
+Tum meri duniya ho.
+
+I wish tumhari saari duaye qabool ho ❤️
+
+</p>
+
+<h3>
+Tumhara Rihan
+</h3>
+
+</div>
+
+<button onclick="nextPage(7)">
+Next Surprise
+</button>
+
+</section>
+
+<!-- PAGE 7 -->
+
+<section id="page7" class="page">
+
+<h1>Open Your Gift 🎁</h1>
+
+<div id="gift" onclick="openGift()">
+🎁
+</div>
+
+</section>
+
+<!-- PAGE 8 -->
+
+<section id="page8" class="page">
+
+<h1>Scan Me ❤️</h1>
+
+<img src="qr/qr.png" class="qr">
+
+<p>
+Scan to open this website again
+</p>
+
+<h2>
+Happy Birthday Sanaaaa😚
+</h2>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
